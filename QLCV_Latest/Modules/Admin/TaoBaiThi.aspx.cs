@@ -13,5 +13,9 @@ namespace CPanel.Modules.QuanLyBaiThi
         {
 
         }
+        protected void btnOK_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Commons.TitleConst.getTitleConst("TaoDeBai.aspx"));
+        }
     }
 }

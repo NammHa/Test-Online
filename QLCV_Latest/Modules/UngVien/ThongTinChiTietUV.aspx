@@ -52,6 +52,6 @@
     </div>
 
     <div class="col-xs-12 text-center">
-        <asp:Button ID="btnNext" Text="Next" CssClass="btn btn-warning" Font-Size="Small" runat="server"></asp:Button>
+        <asp:Button ID="btnNext" Text="Next" OnClick="btnNext_Click" CssClass="btn btn-warning" Font-Size="Small" runat="server"></asp:Button>
     </div>
 </asp:Content>

@@ -85,7 +85,7 @@
             <asp:TextBox runat="server" ID="txt_Username" placeholder="Enter Username"></asp:TextBox>
             <label for="psw"><b>Password</b></label>
             <asp:TextBox runat="server" ID="txt_password" TextMode="Password" placeholder="Enter Password"></asp:TextBox>
-            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" Text="Login" />
+            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" OnClick="btn_Login_Click" Text="Login" />
             <asp:Button runat="server" ID="btn_cancel" Text="Cancel" class="cnbtn" />
         </div>
     </form>

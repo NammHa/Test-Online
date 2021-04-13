@@ -13,22 +13,6 @@ namespace CPanel.Modules.QuanLyBaiThi
         {
 
         }
-
-        protected void btnTracNghiem_Click(object sender, EventArgs e)
-        {
-            Response.Redirect(Commons.TitleConst.getTitleConst("TaoCauHoiTracNghiem.aspx"));
-        }
-
-        protected void btnTuLuan_Click(object sender, EventArgs e)
-        {
-            Response.Redirect(Commons.TitleConst.getTitleConst("TaoCauHoiTuLuan.aspx"));
-        }
-
-        protected void btnSave_Click(object sender, EventArgs e)
-        {
-            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
-        }
-
         protected void btnBack_Click(object sender, EventArgs e)
         {
             Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));

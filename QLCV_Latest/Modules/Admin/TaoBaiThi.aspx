@@ -2,11 +2,20 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="col-xs-12">
-        <label>Loại bài thi</label>
-        <select style="width: 200px"></select>
-        <label>Mức độ bài thi</label>
-        <select style="width: 200px"></select>
+    <div class="col-xs-6 text-center">
+        <label id="loaibaithi">Loại bài thi</label>
+   </div>
+
+    <div class="col-xs-6 text-center">
+        <label id="mucdobaithi">Mức độ bài thi</label>
+    </div>
+
+    <div class="col-xs-6 text-center">
+        <asp:DropDownList ID="drpMenus" AutoPostBack="false" CssClass="form-control element_tab_css center-block" style="Width:200px" runat ="server"></asp:DropDownList>
+    </div>
+
+    <div class="col-xs-6 text-center">
+        <asp:DropDownList ID="DropDownList1" AutoPostBack="false" CssClass="form-control element_tab_css center-block" Width="200px" runat ="server"></asp:DropDownList>
     </div>
 
     <div class="col-xs-12">
@@ -29,13 +38,13 @@
            <label>Số câu hỏi dễ:</label>
        </div>
        <div class="col-xs-3"id="txt_socauhoide1">
-           <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+           <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
        </div>
        <div class="col-xs-3" id="socauhoide2">
            <label>Số câu hỏi dễ:</label>
        </div> 
        <div class="col-xs-3"id="txt_socauhoide2">
-            <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+            <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
@@ -44,13 +53,13 @@
            <label>Số câu hỏi trung bình: </label>
        </div>
         <div class="col-xs-3" id="txt_socauhoibthg1">
-             <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
         <div class="col-xs-3" id="socauhoibthg2">
            <label>Số câu hỏi trung bình: </label>
            </div>
          <div class="col-xs-3"id="txt_socauhoibthg2" >
-             <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
@@ -59,25 +68,40 @@
            <label>Số câu hỏi khó: </label>
        </div>
         <div class="col-xs-3" id="txt_socauhoikho1">
-             <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
         <div class="col-xs-3" id="socauhoikho2">
            <label>Số câu hỏi khó: </label>
            </div>
          <div class="col-xs-3"id="txt_socauhoikho2" >
-             <asp:TextBox runat="server"  placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
-    <div class="col-xs-12" id="thoigianthi">
-        <label>Thời gian thi:</label>
-        <asp:TextBox runat="server" style="width:50px"></asp:TextBox>
-        <label>phút</label>
+    <div class="col-xs-12 text-center" id="thoigianthi">
+        <label id="tgthi">Thời gian thi:</label>
+        <asp:TextBox runat="server" CssClass="form-control element_tab_css" style="width:80px;margin-left:896px;margin-top:10px"></asp:TextBox>
+        <label id="phut">phút</label>
     </div>
 
-    <div class="col-xs-12" id="btn_ok">
-        <asp:Button runat="server" Text="OK" style="width:70px" BorderStyle="Groove"  />
-    </div>
+    
+    <div class="col-xs-12">
+            <asp:Button ID="Button1" Text="Save" OnClick="btnOK_Click" 
+                CssClass="btn btn-success center_css"
+                style="margin-top:20px;
+                       margin-left:885px;
+                background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a  51%, #cb2d3e  100%);
+                padding: 10px 20px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                border-radius: 10px;
+                display: block;" 
+                Width="100px" Height="40px" Font-Size=16px runat="server">
+            </asp:Button>
+        </div>
     <%--<div class="bg_100pecents_css row_css">
 
         <div class="col-xs-3">
@@ -130,8 +154,13 @@
     </div>
     <!--END: hidden tag-->
     <style>
-        .control-label-loaibaithi {
-            /*margin:0px 0px 0px 200px;*/
+        #loaibaithi{
+            font-size:16px;
+            margin-top:20px;
+        }
+        #mucdobaithi{
+            font-size:16px;
+            margin-top:20px;
         }
         #debai-text{
            margin:50px 0px 0px 0px;
@@ -218,6 +247,9 @@
         #btn_ok {
             text-align: center;
             margin: 30px 0px 0px 0px;
+        }
+        #phut{
+            margin-right:5px;
         }
     </style>
 </asp:Content>

@@ -266,8 +266,9 @@
     <Content Include="HomePage.aspx" />
     <Content Include="Main.master" />
     <Content Include="Modules\Admin\ChonBaiThi.aspx" />
+    <Content Include="Modules\Admin\ChonLoaiCauHoi.aspx" />
     <Content Include="Modules\Admin\DsUvDaThi.aspx" />
-    <Content Include="Modules\Admin\ManHinhChinh.aspx" />
+    <Content Include="Modules\Admin\MenuChon.aspx" />
     <Content Include="Modules\Admin\TaoBaiThi.aspx" />
     <Content Include="Modules\Admin\TaoDeBai.aspx" />
     <Content Include="Modules\Admin\ThemUngVien.aspx" />
@@ -281,10 +282,6 @@
     <Content Include="Modules\KPI\Frm_KeHoachCongViec.aspx" />
     <Content Include="Modules\MenuChucNang_Edit.aspx" />
     <Content Include="Modules\MenuChucNang_List.aspx" />
-    <Content Include="Modules\Admin\ChonLoaiCauHoi.aspx" />
-    <Content Include="Modules\Admin\MenuChon.aspx" />
-    <Content Include="Modules\Admin\TaoCauHoiTracNghiem.aspx" />
-    <Content Include="Modules\Admin\TaoCauHoiTuLuan.aspx" />
     <Content Include="Modules\RuiRo_List.aspx" />
     <Content Include="Modules\RuiRo_Edit.aspx" />
     <Content Include="Modules\NhiemVu_Edit.aspx" />
@@ -613,6 +610,12 @@
     <Compile Include="Modules\Admin\ChonBaiThi.aspx.designer.cs">
       <DependentUpon>ChonBaiThi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.cs">
+      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.designer.cs">
+      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Admin\DsUvDaThi.aspx.cs">
       <DependentUpon>DsUvDaThi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -620,12 +623,12 @@
     <Compile Include="Modules\Admin\DsUvDaThi.aspx.designer.cs">
       <DependentUpon>DsUvDaThi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Admin\ManHinhChinh.aspx.cs">
-      <DependentUpon>ManHinhChinh.aspx</DependentUpon>
+    <Compile Include="Modules\Admin\MenuChon.aspx.cs">
+      <DependentUpon>MenuChon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modules\Admin\ManHinhChinh.aspx.designer.cs">
-      <DependentUpon>ManHinhChinh.aspx</DependentUpon>
+    <Compile Include="Modules\Admin\MenuChon.aspx.designer.cs">
+      <DependentUpon>MenuChon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Admin\TaoBaiThi.aspx.cs">
       <DependentUpon>TaoBaiThi.aspx</DependentUpon>
@@ -717,34 +720,6 @@
     </Compile>
     <Compile Include="Modules\MenuChucNang_List.aspx.designer.cs">
       <DependentUpon>MenuChucNang_List.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.cs">
-      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.designer.cs">
-      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Admin\MenuChon.aspx.cs">
-      <DependentUpon>MenuChon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Admin\MenuChon.aspx.designer.cs">
-      <DependentUpon>MenuChon.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Admin\TaoCauHoiTracNghiem.aspx.cs">
-      <DependentUpon>TaoCauHoiTracNghiem.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Admin\TaoCauHoiTracNghiem.aspx.designer.cs">
-      <DependentUpon>TaoCauHoiTracNghiem.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Admin\TaoCauHoiTuLuan.aspx.cs">
-      <DependentUpon>TaoCauHoiTuLuan.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Admin\TaoCauHoiTuLuan.aspx.designer.cs">
-      <DependentUpon>TaoCauHoiTuLuan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\RuiRo_List.aspx.cs">
       <DependentUpon>RuiRo_List.aspx</DependentUpon>

@@ -15,15 +15,6 @@ namespace CPanel.Modules.Admin
     {
 
         /// <summary>
-        /// grvObjects control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView grvObjects;
-
-        /// <summary>
         /// btnAdd control.
         /// </summary>
         /// <remarks>
@@ -51,6 +42,15 @@ namespace CPanel.Modules.Admin
         protected global::System.Web.UI.WebControls.Button btnBack1;
 
         /// <summary>
+        /// grvObjects control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxGridView grvObjects;
+
+        /// <summary>
         /// ASPxGridView1 control.
         /// </summary>
         /// <remarks>
@@ -69,12 +69,12 @@ namespace CPanel.Modules.Admin
         protected global::System.Web.UI.WebControls.Button btnSend;
 
         /// <summary>
-        /// btnBack2 control.
+        /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBack2;
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

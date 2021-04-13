@@ -7,9 +7,9 @@
     <div class="col-xs-12">
         <ul class="nav nav-tabs">
             <li><a href="ChonLoaiCauHoi.aspx">Tạo câu hỏi</a></li>
-            <li><a href="#">Tạo bài thi</a></li>
+            <li><a href="TaoBaiThi.aspx">Tạo bài thi</a></li>
             <li><a href="XemUngVien.aspx">Quản lý bài thi</a></li>
-            <li><a href="#">Gửi bài</a></li>
+            <li><a href="DsUvDaThi.aspx">Gửi bài</a></li>
         </ul>
     </div>
 

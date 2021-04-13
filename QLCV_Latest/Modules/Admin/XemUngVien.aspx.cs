@@ -28,5 +28,10 @@ namespace CPanel.Modules.Admin
         {
             Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
         }
+
+        protected void btnBack2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
+        }
     }
 }

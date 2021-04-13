@@ -13,5 +13,10 @@ namespace CPanel.Modules.UngVien
         {
 
         }
+
+        protected void btnNext_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Commons.TitleConst.getTitleConst("LamBaiThi.aspx"));
+        }
     }
 }
